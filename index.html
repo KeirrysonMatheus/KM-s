@@ -20,6 +20,8 @@
       flex-direction: column;
       align-items: center;
       scroll-behavior: smooth;
+      animation:slidein;
+      animation-duration: 1s
     }
 
     header {
@@ -136,6 +138,8 @@
       max-width: 800px;
       padding: 20px;
       text-align: center;
+      animation:slidein;
+      animation-duration: 1s;
     }
 
     .active {
@@ -219,7 +223,16 @@
       }
     }
 
-    
+    @keyframes slidein {
+  from {
+    margin-bottom: 10%;
+  }
+
+  to {
+    margin-bottom: 0%;
+  }
+}
+
     
   </style>
 </head>
@@ -253,7 +266,7 @@
     <div class="player-info">
       <p class="track">I Wanna Be Yours</p>
       <p class="artist">Artic Monkeys</p>
-      <audio controls loop>
+      <audio controls>
         <source src="./audio/Arctic Monkeys - I Wanna Be Yours.mp3" type="audio/mp3">
         Seu navegador não suporta o elemento de áudio.
       </audio>
