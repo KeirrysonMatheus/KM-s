@@ -20,24 +20,3 @@ function showSection(id) {
 
     setInterval(atualizaContador, 1000);
     atualizaContador();
-
-    // Efeito de corações
-    function soltaCoracoes() {
-      const numCoracoes = 20;
-
-      for (let i = 0; i < numCoracoes; i++) {
-        const heart = document.createElement('div');
-        heart.classList.add('heart');
-        heart.style.left = Math.random() * 100 + 'vw';
-        heart.style.top = Math.random() * 100 + 'vh';
-        document.body.appendChild(heart);
-
-        setTimeout(() => {
-          heart.remove();
-        }, 4000);
-      }
-    }
-
-    document.querySelectorAll('.botoes-amor button').forEach(botao => {
-      botao.addEventListener('click', soltaCoracoes);
-    });
