@@ -19,6 +19,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      scroll-behavior: smooth;
     }
 
     header {
@@ -158,8 +159,32 @@
       margin: 10px;
       border-radius: 15px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    } 
+    }
 
+    .botoes-amor {
+      margin: 30px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .botoes-amor button {
+      background: #ecc9c7;
+      color: #5a4e4d;
+      border: none;
+      margin: 8px;
+      padding: 12px 20px;
+      border-radius: 20px;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 1em;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+
+    .botoes-amor button:hover {
+      background: #f3dede;
+      transform: scale(1.05);
+    }
 
     audio {
       display: block;
